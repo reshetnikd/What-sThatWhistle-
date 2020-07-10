@@ -125,7 +125,7 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
     
     func loadFailUI() {
         let failLabel = UILabel()
-        failLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        failLabel.font = .preferredFont(forTextStyle: .headline)
         failLabel.text = "Recording failed: please ensure the app has access to your microphone."
         failLabel.numberOfLines = 0
         stackView.addArrangedSubview(failLabel)
